@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        
+        <div class="logo-container"> 
+            <a href="index.html">
+            <img src="logo.png" alt="Unitrade Logo" id="logo">
+        </a>
+            <input type="search" id="search-bar" placeholder="search..."> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">how it works</a></li>
+                <li><a href="#">why choose us</a></li>
+                <li class="divider"></li>
+                <li class="heart-icon"><a href="#"></a></li> <!-- Heart icon placeholder -->
+
+                <li class="signupontop"><a href="sign-up-page.html">sign up</a></li>
+            
+                <li class="signinontop"><a href="sign-in-page.html">sign in</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="utfont">
+            <img src="unitradefont.png" alt="Unitrade font" id="utfont">
+        </div>
+        <div class="slogan"> 
+            <p> <b> </b>by college students, for college students.</b></p>
+        </div>
+        <div class="auth-buttons">
+            <button class="button-container" onclick="signup()" id="register-now">Register Now</button>
+            <button class="button-container" onclick="signin()" id="log-in">Log In</button>
+
+            
+        </div>
+        
+            <div class="registernoworsignin"> 
+            <p> Register or Sign in now to see or add to your local listings or </p>
+        </div>
+        
+        <div class="university-select-container">
+            <label for="university-select">Select Your University:</label>
+            <select id="university-select">
+                <option value="">--Please choose an option--</option>
+                <option value="university1">Fordham University</option>
+                <option value="university2">Harvard University</option>
+                <option value="university3">University of Chicago</option>
+                <option value="university4">New York University</option>
+                <option value="university5">University of Pennsylvania</option>
+                <!-- Add more options here -->
+            </select>
+            <button class="search-button">Search</button>
+        </div>
+        
+        </div>
+        
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- unitrade 2024. all rights reserved -->
+    </footer>
+    <script src="script.js"></script> <!-- Moved script tag to the bottom for better page load performance -->
+</body>
+</html>

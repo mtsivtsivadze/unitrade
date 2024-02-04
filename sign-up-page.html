@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="775364141362-c4oconlsn2gpjucmlqvgrltiq4q4chhi.apps.googleusercontent.com">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"> 
+                <img src="logo.png" alt="Unitrade Logo" id="logo">
+            </a>
+            <input type="search" id="search-bar" placeholder="search...">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">how it works</a></li>
+                <li><a href="#">why choose us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="letsgetyoustarted">
+            <p>Let’s get you started!</p>
+        </div>
+        <div class="itsfreeandeasy">
+            <p>It’s free and easy.</p>
+        </div>
+    
+        <form id="signupForm">
+            <label for="fullName"> <b>your full name:</b></label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="universityEmail"><b>your university email:</b></label>
+            <input type="email" id="universityEmail" name="universityEmail" pattern=".+@.+.edu" title="Please enter a valid .edu email address" required>
+    
+            <label for="password"> <b>choose a password:</b></label>
+            <input type="password" id="password" name="password" required minlength="8">
+            <label for="retypePassword"><b>retype your password:</b></label>
+            <input type="password" id="retypePassword" name="retypePassword" required minlength="8">
+            <script>
+                document.getElementById('signupForm').addEventListener('submit', function(event) {
+                    var password = document.getElementById('password').value;
+                    var retypePassword = document.getElementById('retypePassword').value;
+                    
+                    if (password !== retypePassword) {
+                        alert('Passwords do not match. Please retype your password.');
+                        event.preventDefault(); // Prevent the form from submitting
+                    }
+                });
+                </script>
+                
+            <hr>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            var email = document.getElementById('universityEmail').value;
+            if (!email.endsWith('.edu')) {
+                alert('Please provide a valid university email address ending with .edu');
+                event.preventDefault(); // Prevent form from submitting
+            }
+        });
+    </script>
+</body>
+</html>

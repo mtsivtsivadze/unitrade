@@ -1,0 +1,430 @@
+body {
+    background-color: #B5E3B4; /* Light green background */
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    /* Adjust size as needed */
+    width: 85px;
+    height: 80px;
+    margin-right: 50px; /* Creates space between logo and search bar */
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 16px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Change as per your preference */
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px; /* Adjust based on your layout */
+}
+
+.hero h1 {
+    font-size: 48px; /* Adjust the size as needed */
+}
+
+/* General Styles */
+body {
+    background-color: #B5E3B4; /* Light green background */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ... Your other styles ... */
+
+/* Button Styles */
+.button-container {
+    background-color: white; /* Default background */
+    color: #000; /* Default text color, change as needed */
+    padding: 15px 32px; /* Padding */
+    border: none; /* Removes the default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to a pointer when hovering over the button */
+    font-size: 16px; /* Text size */
+    margin: 0 10px; /* Spacing between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#register-now {
+    background-color: white; /* Specific for Register Now */
+}
+
+#log-in {
+    background-color: #9BC49A; /* Specific for Log In */
+}
+
+/* Adjusting button position further down */
+.auth-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    flex-direction: row; /* Stack buttons horiz */
+    margin: 100px;
+    margin-top: 100px; /* Increase as needed to move down */
+}
+
+/* Hover Effect */
+.button-container:hover {
+    opacity: 0.8; /* Example hover effect */
+}
+
+/* Ensure the image and slogan are correctly positioned without using extreme negative margins */
+#utfont, .slogan {
+    margin-top: 0px; /* Adjust or remove negative margins */
+}
+
+/* Search Bar Styling */
+#search-bar {
+    width: 40vw; /* Responsive width */
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Ensures font consistency */
+}
+
+
+
+/* Centering the image within its section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* This centers the text elements like <p> inside .hero */
+}
+
+/* Adjusting the size and ensuring the image is centered */
+#utfont {
+    max-width: 75%; /* Adjust this value to make the image smaller or larger */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+#utfont {
+    max-width: 75%;
+    height: auto;
+    margin-top: -500px; /* Adjust the value as needed to move the image up */
+}
+
+.slogan {
+    margin-top: -450px;
+}
+
+#search-bar {
+    width: 20%; /* The search bar will take up 50% of its parent container's width */
+    /* Or */
+    width: 40vw; /* The search bar will take up 80% of the viewport width */
+    padding: 10px;
+    font-size: 16px;
+
+    font-family:'Plus Jakarta Sans', sans-serif;
+
+}
+
+.registernoworsignin {
+    font-size: 16;
+    font-weight: bold;
+    margin-top: -80px;
+
+}
+
+nav ul li.heart-icon a {
+    display: inline-block;
+    position: relative;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    text-decoration: none;
+}
+
+nav ul li.heart-icon a::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="%236FAD6D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>');
+    display: inline-block;
+    width: 30px; /* SVG width */
+    height: 30px; /* SVG height */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* General Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Adjust as needed */
+    padding: 8px 15px; /* Provides spacing around link text */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Ensures font consistency */
+}
+
+/* Divider Styles */
+.divider {
+    background-color: #6FAD6D; /* Your specified color */
+    width: 2px; /* Width of the divider line */
+    height: 20px; /* Height of the divider line, adjust based on your nav's height */
+    margin: 0 10px; /* Spacing on sides of the divider */
+}
+
+/* Log In Button Styles */
+nav ul li.signinontop a {
+    background-color: #6FAD6D; /* Filled with your specified color */
+    color: #fff; /* White text */
+    border-radius: 20px; /* Rounded corners for the filled container */
+}
+
+/* Sign Up Link Underlined */
+nav ul li a[href*="signupontop"] { /* Targeting based on href, adjust if needed */
+    text-decoration: underline; /* Underlines the Sign Up link */
+}
+
+.university-select-container {
+    text-align: center; /* Center the dropdown and button */
+    margin-top: 20px; /* Space from the content above */
+}
+
+.university-select-container select {
+    padding: 10px;
+    font-size: 16px; /* Match the font size of your other elements */
+    margin-right: 10px; /* Space between the select dropdown and the search button */
+    border-radius: 20px; /* Rounded corners to match your buttons */
+    border: 2px solid #6FAD6D; /* Border color to match the "Register Now" button */
+}
+
+.university-select-container .search-button {
+    background-color: white; /* Filled with your specified color */
+    color: black; /* White text */
+    padding: 10px 20px; /* Padding to match the style of your "Register Now" button */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to a pointer when hovering over the button */
+    font-size: 16px; 
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Ensures font consistency *//* Match the font size of your other elements */
+font-weight: 80%;
+}
+
+
+.university-select-container .search-button:hover {
+    background-color: white; /* Slightly darker on hover for feedback */
+
+}
+
+/* Optional: Style the label for consistency */
+.university-select-container label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 10px;
+    display: block; /* Ensure it takes its own line for clarity */
+}
+
+
+/*SIGN IN PAGE*/
+.signinwithyour {
+    font-size:large;
+    font-weight: bold;
+    margin: center;
+text-align: center;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+height: 150px; /* Specify a height for the container */
+  }
+
+
+  .form-group {
+    margin-bottom: 15px; /* Adds space between each form group */
+}
+
+label {
+    display: block; /* Makes the label take up the full width, forcing anything after it to a new line */
+    margin-bottom: 15px; /* Adds a little space between the label and the input field */
+}
+
+/* Apply Plus Jakarta Sans and center alignment to the whole form */
+form {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center; /* Centers the content */
+    width: 100%; /* Use this to ensure form is full width if needed */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 20%; /* Adjust width as needed */
+    padding: 8px;
+    margin-bottom: 0px;
+    margin-top: 10px; /* Adds space above each input field */
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: transparent; /* Makes the input fields transparent */
+    text-align: center; /* Centers the placeholder/entered text */
+    /* Center input fields */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button[type="submit"] {
+    background-color:black; /* Makes the button background transparent */
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid black; /* Adds a white border */
+    border-radius: 4px;
+    cursor: pointer;
+    /* Center the button */
+    display: block;
+    margin: 0 auto; /* Automatically centers the button in the form */
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8; /* Slightly changes opacity on hover for a visual effect */
+}
+
+
+.form-group {
+    text-align: center; /* Center-aligns the content */
+}
+
+/* Additional styles for the form group if needed */
+.form-group p {
+    margin: 0 0 10px; /* Adds space below the paragraph */
+}
+
+/* Centers the content of .form-group, including text and Google Sign-In button */
+.form-group .orloginwithgoogle {
+    margin-top: 10px;
+    text-align: center; /* Centers the text within */
+    display: flex;
+    font-size:large;
+    font-weight: bold;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Horizontally centers the flex items */
+    justify-content: center; /* Vertically centers the flex items (if .form-group has a defined height) */
+    width: 100%; /* Ensures the .form-group takes the full width of its parent */
+}
+
+/* Adds some space between the text and the Google Sign-In button */
+
+.google-btn-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    margin-top: 10px; /* Adds space above the button */
+}
+
+.divider2 {
+    border-top: 2px solid black; /* Solid line divider */
+    width: 80%; /* Adjust based on preference */
+    margin: 20px auto; /* Even spacing above and below, centered horizontally */
+}
+
+
+
+.orloginwithgoogle {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    font-size:large;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*SIGNUP PAGE*/
+.letsgetyoustarted {
+    font-size:xx-large;
+    font-weight: bold;
+    margin: left;
+text-align: center;
+display: flex;
+justify-content: left; /* Center horizontally */
+align-items: center; /* Center vertically */
+
+height: 40px; /* Specify a height for the container */
+}
+
+.itsfreeandeasy {
+    font-size:x-large;
+    margin: left;
+text-align: center;
+display: flex;
+justify-content: left; /* Center horizontally */
+align-items: center; /* Center vertically */
+height: 40px; /* Specify a height for the container */
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center inputs horizontally within the form */
+    justify-content: center; /* Adjust if you need to control vertical spacing */
+    width: 100%; /* Or a specific width as per your design */
+    margin-top: 15px; /* Space above the form */
+    margin-bottom: 15px;
+}
+#signupForm input[type="text"],
+#signupForm input[type="email"],
+#signupForm input[type="password"] {
+    width: 30%; /* Control width */
+    padding: 10px; /* Inner spacing */
+    margin: 10px auto; /* Top/bottom spacing and auto for horizontal centering */
+    border: 2px solid black; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 18px; /* Text size */
+    background-color: transparent; /* Background */
+    text-align: center; /* Center text inside inputs */
+}
+
+.verification-info-sent {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Correctly centers content horizontally */
+    /* Removed justify-content: left; as it's not effective with column direction for horizontal centering */
+    margin: auto; /* Use 'auto' to center the block itself if needed, 'left' is not a valid value for margin */
+    /* Removed height: 10px; as it might be too small to contain text */
+    padding: 20px; /* Added padding for spacing inside the container */
+}
+
+.cant-find-the-email {
+    font-size: medium;
+    font-weight: italic;
+    text-align: center; /* Updated to center; 'left' aligns text to the left, contradicting the class purpose */
+    /* Removed flex-direction and justify-content as they have no effect without display: flex */
+    margin: auto; /* Center the block if needed, 'left' is not valid here */
+    /* Removed height: 40px; specify height carefully as it may cut off content */
+    padding: 10px; /* Added padding for spacing inside the container */
+}
